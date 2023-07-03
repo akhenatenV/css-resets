@@ -1,0 +1,40 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+*,*:before,*:after{
+	animation-duration: 0.01ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.01ms !important;
+	scroll-behavior: smooth !important;
+}
+/* RESET MARGIN AND PADDINGS */
+*{
+	margin: 0;
+	padding: 0;
+}
+/* RESET LIST TYPES */
+ol[role='list'],
+ul[role='list']{
+	list-style: none;
+}
+html:focus-within{
+	scroll-behavior: smooth;
+}
+body{
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.25;
+}
+img,picture{
+	max-width: 100%;
+	display: block;
+}
+@media (prefers-reduced-motion: reduce){
+	html:focus-within{
+		scroll-behavior:auto;
+	}
+}
+
+
+
+
